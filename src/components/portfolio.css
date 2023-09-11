@@ -1,0 +1,65 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.portfolio_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+.portfolio_item{
+    background: var(--color-bg-varient);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+
+}
+.portfolio_item:hover{
+    border-color: var(--color-primary-varient);
+    background: transparent;
+}
+.portfolio_item-image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+    
+}
+
+.portfolio_item h3{
+    margin: 1.2 0 2rem;
+}
+.portfolio_item-cta{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* =====================  Saari Media Queries yhaa hai (medium device k liye )======================= */
+
+@media (min-width:600px) and (max-width:1400px){
+    .portfolio_container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.2rem;
+    }
+
+
+ }
+ 
+ /* chote devices k liye */
+ 
+ @media (max-width:600px) {
+    .portfolio_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+ }
+ @media (min-width:1401px) {
+    .portfolio_container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.2rem;
+    }
+ }

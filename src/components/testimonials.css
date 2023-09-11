@@ -1,0 +1,53 @@
+
+.containers .testimonials_conatiner{
+   width: 40%;
+   padding-bottom: 4rem;
+
+}
+.client_avatar{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-varient);
+}
+.testimonial{
+    background: var(--color-bg-varient);
+    text-align:center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+
+}
+.client_review{
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0 auto 0;
+}
+.swiper-pagination-clickable .swiper-pagination-bullets{
+    background: var(--color-primary);
+}
+/* =====================  Saari Media Queries yhaa hai (medium device k liye )======================= */
+
+@media (min-width:600px){
+   
+.testimonials_conatiner{
+    width: 60%;
+}
+
+ }
+ 
+ /* chote devices k liye */
+ 
+ @media(max-width:600px) {
+    .testimonials_container{
+        width: var(--container-width-sm);
+       }
+       .client_review{
+        width: var(--container-width-sm);
+       }
+ }
+

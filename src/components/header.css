@@ -1,0 +1,120 @@
+
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+
+}
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+
+}
+
+/* ==================CTA=========== */
+
+
+.cta{
+    margin: top 2.5rem; 
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+
+}
+
+/* ==================social media ki css=========== */
+.header_socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header_socials::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ==================meri chije=========== */
+.me{
+   background: var(--color-primary);
+   width: 22rem;
+   height: 30rem;
+   position: absolute;
+   left: calc(50% - 11rem);
+   margin-top: 4rem;
+   padding: 5rem 1.5rem 1.5rem 1.5rem;
+   border-radius: 12rem 12rem 0 0;
+   overflow: hidden;
+}
+
+.itsme{
+    position: relative;
+    left: 0px;
+    bottom: -95px;
+    
+}
+/* ==================scroll down k liye=========== */
+
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* =====================  Saari Media Queries yhaa hai (medium device k liye )======================= */
+
+/* @media screen  and(max-width:1024px){
+    /* header{
+        height: 68vh;
+    } */
+    /*.itsme{
+        position: relative;
+        left: 10%;
+
+    }
+} */
+@media screen  and(min-width:1025px){
+    /* header{
+        height: 68vh;
+    } */
+   
+}
+
+@media (max-width:600px) {
+    /* header{
+        height: 100vh;
+    } */
+    .header_socials,
+    .scroll_down{
+        display: none;
+    }
+    
+}
+/* 
+@media (max-width:2100px) {
+    .itsme{
+        bottom: -20px;
+    }
+    
+}
+@media (max-width:401px) {
+    .itsme{
+        bottom: 90px;
+    }
+}
+@media (min-width:2101px) {
+    .itsme{
+        bottom: -80px;
+    }
+    
+} */
